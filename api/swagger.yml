@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: "LibManage REST API"
+  description: "An API for automating various manual processes done by librarian."
+  version: "1.0.0"
+servers:
+  - url: "/api"
+
+paths:
+  /people:
+    get:
+      operationId: "people.read_all"
+      tags:
+        - "People"
+      summary: "Read the list of people"
+      responses:
+        "200":
+          description: "Successfully read people list"
